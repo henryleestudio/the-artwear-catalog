@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" href="img/myIcon.png" />
+
+  <title>The Artwear Catalog</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <a href="/"><menu>home</menu></a>
+
+    <h1 id="profileSiteTitle" class="siteTitle">
+        <ul>
+          <a href="/"><li id="title">The Artwear Gallery</li>
+            <li id="tagLine">Art // Fashion Catalog</li></a>
+        </ul>
+    </h1>
+  </header>
+
+  <main id="createArtwearSec">
+    <h1 class="headerTxt">Create your own art to wear</h1>
+
+    <h2>Customize Your Art Shirt</h2>
+
+    <section id="tshirt">
+      <img class="displayShirt" src="img/tshirts-colors/tshirt-black.png" alt="">
+
+      <img class="displayArt" src="img/backgrounds/background-1.png" alt="">
+
+      <img class="displayAccents" src="img/foreground/foreground-1.png" alt="">
+    </section>
+
+    <form id="tshirtForm" action="/newEntry" method="POST" enctype="multipart/form-data">
+      <span>Image Upload:</span>
+
+      <input id="imgUpload" type="file" name="img">
+
+      <span class="optionTitle">color:</span>
+
+      <section id="colorSection" class="tshirtSec">
+        <label>
+          <input type="radio" name="color" value="blackShirt" checked>
+          <div class="color-1 tshirtOptions"></div>
+        </label>
+        
+        <label>
+          <input type="radio" name="color" value="peachShirt" checked>
+          <div class="color-2 tshirtOptions"></div>
+        </label>
+        
+        <label>
+          <input type="radio" name="color" value="pearShirt" checked>
+          <div class="color-3 tshirtOptions"></div>
+        </label>
+      </section>
+
+      <span class="optionTitle">art:</span>
+
+      <section id="artSection" class="tshirtSec">
+        <label>
+          <input type="radio" name="art" value="artworkOne" checked>
+          <div class="art-1 tshirtOptions"></div>
+        </label>
+
+        <label>
+          <input type="radio" name="art" value="artworkTwo" checked>
+          <div class="art-2 tshirtOptions"></div>
+        </label>
+
+        <label>
+          <input type="radio" name="art" value="artworkThree" checked>
+          <div class="art-3 tshirtOptions"></div>
+        </label>
+      </section>
+
+      <span class="optionTitle">accent:</span>
+
+      <section id="accentSection" class="tshirtSec">
+        <label>
+          <input type="radio" name="accent" value="accentOne" checked>
+          <div class="accent-1 tshirtOptions"></div>
+        </label>
+
+        <label>
+          <input type="radio" name="accent" value="accentTwo" checked>
+          <div class="accent-2 tshirtOptions"></div>
+        </label>
+       
+        <label>
+          <input type="radio" name="accent" value="accentThree" checked>
+          <div class="accent-3 tshirtOptions"></div>
+        </label>
+      </section>
+
+      <span class="optionTitle">custom artwork:</span>
+
+      <section id="customArtSec">
+        <label>
+          <input type="radio" name="customImg" value="<%= img %>" checked>
+          <div class="customArtBox tshirtOptions" style="
+            background-image: url('<%= img %>'); 
+            height: 23rem;
+            width: 23rem;
+            background-repeat: no-repeat;
+            background-size: cover;
+          "></div>
+        </label>
+      </section>
+
+      <button id="submitButton" type="submit">create</button>
+    </form>
+  </main>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>

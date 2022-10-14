@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Raleway', sans-serif;
+  /* background-image: url("../img/tile-background-2.png"); */
+  background-color: white;
+  text-align: center;
+}
+
+.jumbotron {
+  display: none; 
+}
+
+#logo {
+  width: 9.5rem;
+  float: left;
+  margin-top: -13.5rem;
+  margin-left: 4.7rem;
+  opacity: 0.7;
+}
+
+#coverImg {
+  height: 75vh;
+}
+
+.catalogImg-1 {
+  background-image: url(img/catalog-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 140vh;
+  width: 100%;
+}
+
+#product-1 {
+  float: left;
+}
+
+main {
+  display: inline-block;
+  width: 100%;
+}
+
+.dropdown-toggle::after {
+  border-right: 0em solid transparent;
+}
+
+.show>.btn-secondary.dropdown-toggle {
+  border: none;
+}
+
+.btn-secondary:hover {
+  border: none;
+}
+
+.menu {
+  margin: 0px;
+  display: inline-block;
+  position: fixed;
+  text-decoration: underline;
+  color: white;
+  font-size: 1.7rem;
+  top: 3rem;
+  right: 4rem;
+  /* background-color: #ffffff36; */
+  /* background-color: #3BC1CC; */
+  padding: 0px 4px 1px 4px;
+  border-radius: 2px;
+  z-index: 5;
+}
+
+menu {
+  margin: 0px;
+  display: inline-block;
+  position: fixed;
+  text-decoration: underline;
+  color: #333;
+  font-size: 1.7rem;
+  top: 3rem;
+  right: 4rem;
+  /* background-color: #ffffff36; */
+  /* background-color: #3BC1CC; */
+  padding: 0px 4px 1px 4px;
+  border-radius: 2px;
+  z-index: 5;
+}
+
+.btn-secondary {
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  background-color: #3333333b;
+  border: none;
+}
+
+ul, li {
+  text-decoration: none;
+  list-style: none;
+  color: #333;
+}
+
+.siteTitle li {
+  float: left;
+  font-size: 1.8rem;
+  color: white;
+  margin-top: 3.4rem;
+}
+
+.siteTitle {
+  margin-left: 1rem;
+}
+
+#profileSiteTitle li {
+  float: left;
+  font-size: 1.8rem;
+  color: #333;
+  margin-top: 3.4rem;
+  margin-left: 1rem;
+} 
+
+#title {
+  margin-left: -2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+#tagLine {
+  margin-left: 1rem;
+  font-weight: 800;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  margin: 0px;
+}
+
+ul, ol {
+  margin: 0;
+}
+ 
+p {
+  color: black;
+  font-size: 2rem;
+}
+
+span {
+  color: black;
+  font-size: 1.6rem;
+  margin-left: 5px;
+  font-size: 2rem;
+}
+
+.tshirtOptions {
+  border: 1px solid black;
+  width: 33%;
+  height: 20px;
+}
+
+.tshirtSec {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#tshirtForm {
+  text-align: center;
+  width: 100%;
+}
+
+.optionTitle {
+  display: block;
+  margin: 2rem 2rem;
+}
+
+#submitButton {
+  margin-top: 2rem;
+}
+
+#createArtwearSec {
+  text-align: center;
+  padding: 3%;
+}
+
+#tshirt {
+  width: 100%;
+  padding: 2% 12%;
+  z-index: -3;
+  display: grid;
+  grid-template-columns: auto minmax(0,1fr);
+}
+/* SHIRT COLORS HERE  */ 
+
+.displayShirt {
+  display: block;
+  width: 100%;
+  z-index: -3;
+  grid-area: overlap;
+}
+
+/* SHIRT ART HERE  */ 
+
+.displayArt {
+  display: block;
+  grid-area: overlap;
+  align-self: center;
+  justify-self: center;
+  width: 30%;
+  z-index: -2;
+  opacity: .8;
+}
+/* SHIRT ACCENT HERE  */ 
+
+.displayAccents {
+  display: block;
+  grid-area: overlap;
+  align-self: center;
+  justify-self: center;
+  width: 27.4%;
+  z-index: -1;
+  opacity: .8;
+}
+
+/* HIDE RADIO */
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+  outline: 2px solid white;
+}
+
+/* COLOR OPTIONS HERE  */ 
+
+.color-1 {
+  background-image: url(img/tshirts-colors/tshirt-black.png);
+  height: 23rem;
+  width: 23rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.color-2 {
+  background-image: url(img/tshirts-colors/tshirt-peach.png);
+  height: 23rem;
+  width: 23rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.color-3 {
+  background-image: url(img/tshirts-colors/tshirt-pear.png);
+  height: 23rem;
+  width: 23rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* COLOR OPTIONS HERE  */ 
+
+.art-1 {
+  background-image: url(img/backgrounds/background-1.png);
+  height: 23rem;
+  width: 23rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.art-2 {
+  background-image: url(img/backgrounds/background-2.png);
+  height: 23rem;
+  width: 23rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.art-3 {
+  background-image: url(img/backgrounds/background-3.png);
+  height: 23rem;
+  width: 23rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* ACCENTS OPTIONS HERE  */ 
+
+.accent-1 {
+  background-image: url(img/foreground/foreground-1.png);
+  height: 23rem;
+  width: 23rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.accent-2 {
+  background-image: url(img/foreground/foreground-2.png);
+  height: 23rem;
+  width: 23rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.accent-3 {
+  background-image: url(img/foreground/foreground-3.png);
+  height: 23rem;
+  width: 23rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#spanRotate {
+  float: left;
+  margin-top: 11rem;
+  margin-left: 0rem;
+  transform: rotate(270deg);
+  /* display: inline-block; */
+  margin-top: 4rem;
+}
+
+#catalog-1 .quote {
+  color: white;
+}
+.quote {
+  color: white;
+}
+
+.quoteSpan {
+  color: white;
+}
+
+.quoteSpan {
+  display: block;
+}
+
+#quote-1 {
+  margin-top: 16rem;
+  text-align: left;
+  margin-left: 75%;
+  width: 25rem;
+}
+
+#quote-1 span {
+  color: #48b7c2;
+  font-weight: bolder;
+  font-size: 4rem;
+  margin-left: -1.7rem;
+  opacity: 0.9;
+}
+
+#quote-2 {
+  margin-top: 27rem;
+  text-align: right;
+  margin-right: 75%;
+}
+
+#quote-2 span {
+    color: #3bc1cc;
+    margin-left: -1px;
+    font-size: 7rem;
+    font-weight: 100;
+    margin-top: -47rem;
+    line-height: 9rem;
+    margin-bottom: 29rem;
+}
+
+.title {
+  display: block;
+}
+
+#title-1 span {
+  text-align: left;
+  color: #333;
+  margin-left: -0.5rem;
+  font-size: 5rem;
+  font-weight: 200;
+  margin-top: 4rem;
+}
+
+#title-1 {
+  font-size: 3.4rem;
+  text-align: left;
+  color: #333;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+
+.artShirtExample {
+  background-image: url(img/sample-tshirt.gif);
+  height: 45rem;
+  width: 45rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  margin: auto;
+}
+
+#CustomArtShirt {
+  padding: 5rem;
+}
+
+#artShirtTxt {
+  display: block;
+  margin: auto;
+  font-weight: 300;
+  font-size: 3rem;
+  margin-top: 5.5rem;
+  color: #333;
+  width: 100%;
+  line-height: 6rem;
+}
+
+#catalog-2 {
+  background-color: #3bc1cc;
+  background-image: url(img/catalog-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 140vh;
+} 
+
+#quote-3 {
+  margin-top: -8rem;
+  text-align: center;
+  margin-left: 73.7%;
+  font-size: 6rem;
+  font-weight: bolder;
+  letter-spacing: 0.3rem;
+  line-height: 7rem;
+  width: 25rem;
+}
+
+#quote-4 {
+  padding: 5rem 0rem;
+  margin-top: 1rem;
+  letter-spacing: 0.3rem;
+  color: #333;
+}
+
+.dropdown-item {
+  background-color: #00000000;
+}
+
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open .dropdown-toggle.btn-warning {
+  background-color: white;
+}
+
+.sideImg {
+  height: 100%;
+  /* opacity: 0.3; */
+}
+
+#sideImg-1 {
+  float: left;
+  /* margin-left: -5rem; */
+}
+
+#sideImg-2 {
+  float: right;
+  /* margin-right: -5rem; */
+}
+
+.colorCatalog-2 {
+  height: 10rem;
+  width: 100%;
+  background-color: #3bc1cc;
+  opacity: 0.3;
+}
+
+.gradientCatalog-1 {
+  position: absolute;
+  display: block;
+  margin-top: -29.9rem;
+  height: 30rem;
+  width: 100%;
+}
+
+hr {
+  margin-top: 4.5rem;
+  margin-bottom: 3rem;
+  margin-left: 32.1rem;
+  width: 19rem;
+  border: .25px solid #333;
+}
+
+#quote-5 {
+  text-align: left;
+  float: right;
+  margin-right: 4.2rem;
+  font-size: 1.5rem;
+}
+
+#catalogImg-3 {
+  background-image: url(img/catalog-3-3.jpg);
+  background-position: right;
+  background-size: cover;
+  display: block;
+  margin: auto;
+  height: 40rem;
+  width: 55rem;
+}
+
+#title-2 {
+  margin: 7rem 0rem;
+}
+
+.quoteSpan {
+  color: #333;
+  margin-left: -1px;
+}
+
+button {
+  font-size: 4rem;
+  font-weight: 300;
+  color: white;
+  background-color: #3bc1cc54;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+    /* border: 1px solid #3bc1cc; */
+  /* background-color: #ffffff00; */
+}
+
+button:hover {
+  background-color: white;
+  color: #3bc1cc;
+  border: 1px solid #3bc1cc;
+}
+
+footer input {
+  width: 20rem;
+  border: 1px solid #333;
+  border-radius: 3px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  width: 20rem;
+  border: 1px solid #333;
+  border-radius: 3px;
+  border-top-right-radius: 0px;
+  font-size: 1.1rem;
+  border-bottom-right-radius: 0px;
+  font-size: 1.3rem;
+  padding: 0.4rem;
+}
+
+footer button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.3rem;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-left: 0.2rem;
+  z-index: 1;
+}
+
+footer {
+  margin: 7.5rem;
+}
+
+footer form {
+  float: none;
+  margin: 0px;
+  display: block;
+  margin: auto;
+}
+
+form button {
+  padding: 0.7rem 3rem;
+}
+
+form select {
+  font-size: 2.5rem;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 0.3rem;
+}
+
+form span {
+  font-size: 2.7rem;
+  margin-right: 1rem;
+  color: #333;
+  letter-spacing: 0.3rem;
+}
+
+#createArtwearSec h1 {
+  font-size: 5rem;
+  font-weight: 200;
+  margin-top: 4rem;
+}
+
+#createArtwearSec h2 {
+  margin-top: 1.6rem;
+}
+
+.btn-lg {
+  font-size: 4rem;
+  font-weight: 300;
+  color: white;
+  background-color: #3bc1cc54;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin: 7.5rem 0rem;
+}
+
+.btn-lg:active {
+  background-color: #fff;
+}
+
+.btn-lg:hover {
+  border: 1px solid #3bc1cc;
+}
+
+.headerTxt {
+  font-size: 5rem;
+  font-weight: 200;
+  margin: 4rem 0rem;
+}
+
+a {
+  color: #3bc1cc;
+}
+
+.btn-warning:hover {
+  color: #3bc1cc;
+  background-color: #fff;
+  border-color: none;
+}
+
+#createArtwear-center {
+  display: inline-block;
+}
+
+.artShirtExample {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.dropdown-menu {
+  z-index: 5;
+  float: left;
+  right: 64rem;
+  min-width: 8.7rem;
+  padding: 0.5rem 0;
+  margin-top: -1px;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: left;
+  list-style: none;
+  background-color: #ffffff91;
+  background-clip: padding-box;
+  border: 1px solid #3bc1cc;
+  border-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+#designsButton {
+ display: block;
+ margin: auto;
+ margin-top: 5rem;
+}
+
+#designsButton:hover {
+  color: #3bc1cc;
+  background-color: #fff;
+  border-color: none;
+  /* list-style: none;
+  pointer-events: none;
+  text-decoration: none; */
+ }
+
+ a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  }
+
+  .col-sm-6  {
+    max-width: none;
+  }
+
+  #imgUpload {
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+    background-color: #3bc1cc54;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 2.1rem;
+      /* border: 1px solid #3bc1cc; */
+    /* background-color: #ffffff00; */
+  }
+
+  #customArtSec {
+    height: 23rem;
+    width: 23rem;
+    border: 1px solid #333;
+    display: block;
+    margin: auto;
+  }
