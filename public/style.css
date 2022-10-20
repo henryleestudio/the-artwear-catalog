@@ -363,7 +363,7 @@ span {
 }
 
 #quote-1 span {
-  color: #48b7c2;
+  color: #48b7c26b;
   font-weight: bolder;
   font-size: 4rem;
   margin-left: -1.7rem;
@@ -391,7 +391,6 @@ span {
 }
 
 #title-1 span {
-  text-align: left;
   color: #333;
   margin-left: -0.5rem;
   font-size: 5rem;
@@ -401,7 +400,7 @@ span {
 
 #title-1 {
   font-size: 3.4rem;
-  text-align: left;
+  text-align: center;
   color: #333;
   letter-spacing: 0.1rem;
   font-weight: 600;
