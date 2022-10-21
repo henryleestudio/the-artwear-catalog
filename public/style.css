@@ -391,7 +391,7 @@ span {
 }
 
 #title-1 span {
-  text-align: left;
+  text-align: center;
   color: #333;
   margin-left: -0.5rem;
   font-size: 5rem;
@@ -401,7 +401,7 @@ span {
 
 #title-1 {
   font-size: 3.4rem;
-  text-align: left;
+  /* text-align: left; */
   color: #333;
   letter-spacing: 0.1rem;
   font-weight: 600;
