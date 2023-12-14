@@ -5,7 +5,7 @@ The Artwear Catalog is an art / fashion exhibition for one of a kind, hand paint
 
 JavaScript | Node.js | Express | Mongodb | Bootstrap | Graphic Design | Graphic Art | Photoshop CC | Illustrator CC | Indesign CC
 
-Link to project: <a target="_blank" href="https://the-artwear-catalog-demo.herokuapp.com/">live demo</a>
+Link to project: <a target="_blank" href="https://the-artwear-catalog.up.railway.app/">live demo</a>
 
 <img width="1438" alt="Screen Shot 2022-06-24 at 6 58 03 PM" src="https://user-images.githubusercontent.com/101936420/175730821-16ea1e6f-03aa-481b-9aa2-27be42590263.png">
 
