@@ -1,4 +1,4 @@
-# The Artwear Catalog
+# The Artwear Catalog | Full stack application
 
 Link to project: <a target="_blank" href="https://the-artwear-catalog.up.railway.app/">live demo</a>
 
