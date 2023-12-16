@@ -1,11 +1,10 @@
 # The Artwear Catalog
-Resilient Coders Demo Day - Full stack application
+
+Link to project: <a target="_blank" href="https://the-artwear-catalog.up.railway.app/">live demo</a>
 
 The Artwear Catalog is an art / fashion exhibition for one of a kind, hand painted, art to wear pieces. It showcases the co-creative talents of models, photographers, designers, and artists in the creative-professional community in Philadelphia, and has a custom art to wear interface that enables the user to create their own art to wear.
 
 This design concept is inspired by the high fashion catalog aesthetic, so I decided to design a clean and spacious style layout with dynamic typographic, in relation to the catalog style photography to embody a modern art gallery look and feel. All art pieces are made by yours truly or in collaboration with another artist. I was intentional about not using a template for this project. Graphic design work is done by scratch.
-
-Link to project: <a target="_blank" href="https://the-artwear-catalog.up.railway.app/">live demo</a>
 
 <img width="1438" alt="Screen Shot 2022-06-24 at 6 58 03 PM" src="https://user-images.githubusercontent.com/101936420/175730821-16ea1e6f-03aa-481b-9aa2-27be42590263.png">
 
